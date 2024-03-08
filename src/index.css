@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { 
+  /* (Dark Mode Text & Light Mode Elements) */
+  
+  .light-theme { 
+    --text : hsl(200, 15%, 8%);
+    --elements : hsl(0, 0%, 100%);
+    /* --elements : hsl(0, 0%, 52%); */
+    --background : hsl(0, 0%, 98%);
+    --White : hsl(0, 0%, 100%);
+  }
+  .dark-theme { 
+    --text : hsl(0, 0%, 100%);
+    --elements: hsl(209, 23%, 22%);
+    --background: hsl(207, 26%, 17%);
+    --White : hsl(0, 0%, 100%);
+  }
+  .nunito-sans {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300, 600, 800;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "YTLC" 500;
+  }
+  .trans { 
+    @apply transition-all duration-300 ;
+  }
+}
