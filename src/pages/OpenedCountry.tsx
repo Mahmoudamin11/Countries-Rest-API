@@ -17,6 +17,7 @@ const OpenedCountry = () => {
                 <span className="ml-2 ">Back</span>
             </button>
         </Link>
+        
         { 
           data.map((c,index) => (
             <div key={c.numericCode + " " + index} className={` ${getOpenedCountry() != c.numericCode ? "hidden" : "flex"} md:hidden flex-col gap-8`}>
