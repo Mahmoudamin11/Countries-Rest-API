@@ -10,7 +10,7 @@ const OpenedCountry = () => {
   
 
   return (
-    <div className=' flex flex-col gap-8 py-12 px-5'>
+    <div className=' flex flex-col   gap-8 py-12 px-5'>
         <Link to="/">
             <button className='flex px-6 shadow-element cursor-pointer trans hover:scale-105 py-2 text-text items-center rounded-md  bg-elements '>
                 <FontAwesomeIcon icon={faArrowLeftLong} />
@@ -60,7 +60,7 @@ const OpenedCountry = () => {
         {/* Large screens */}
         { 
           data.map((c,index) => (
-            <div key={c.numericCode + " " + index} className={` ${getOpenedCountry() != c.numericCode ? "hidden" : "flex"} max-md:hidden flex-col lg:flex-row max-lg:gap-10 items-center w-full max-xl:justify-between xl:gap-52`}>
+            <div key={c.numericCode + " " + index} className={` ${getOpenedCountry() != c.numericCode ? "hidden" : "flex"} max-md:hidden lg:justify-evenly lg:mt-20 xl:mt-8 flex-col lg:flex-row max-lg:gap-10 items-center w-full max-xl:justify-between `}>
               <img src={c.flags.png} alt="" className=" shadow-md w-[450px] h-[300px] xl:w-[580px] xl:h-[390px]" />
 
               <div className="flex flex-col gap-10">
